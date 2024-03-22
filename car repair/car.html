@@ -1,0 +1,300 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Welcome to CarSalon</title>
+    <link rel="stylesheet" href="styles.css">
+    <!-- Link to Font Awesome for icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <style>
+        /* Adjusting the layout of the navigation links */
+        nav ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            display: flex; /* Display navigation links horizontally */
+        }
+        nav ul li {
+            margin-right: 20px; /* Add spacing between navigation links */
+        }
+        nav ul li a {
+            text-decoration: none;
+            color: black;
+        }
+        /* Adjusting the size of the heading */
+        header h1 {
+            font-size: 1.5em; /* Medium size */
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Welcome to CarSalon</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html"><i class="fas fa-home"></i> Home</a></li>
+                <li><a href="about.html"><i class="fas fa-info-circle"></i> About Us & Services</a></li>
+                <li><a href="gallery.html"><i class="fas fa-images"></i> Gallery</a></li>
+                <li><a href="contact.html"><i class="fas fa-envelope"></i> Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    <div id="slideshow">
+        <!-- Slideshow images -->
+        <img src="OIP.jpeg" alt="Slide 1">
+        <img src="WhatsApp Image 2024-03-21 at 13.26.21_407d6470.jpg" alt="Slide 2">
+        <img src="WhatsApp Image 2024-03-21 at 13.26.24_a1027755.jpg" alt="Slide 3">
+    </div>
+    <section id="tips">
+        <h2>Car Repair Tips</h2>
+        <ul>
+            <li>Regularly check your engine oil and coolant levels.</li>
+            <li>Inspect your tires for wear and maintain proper tire pressure.</li>
+            <li>Listen for unusual noises and address them promptly.</li>
+            <!-- Add more car repair tips here -->
+        </ul>
+    </section>
+    <script src="script.js" defer></script>
+</body>
+</html>
+
+<section id="about">
+    <h2>About CarSalon</h2>
+    <p>Welcome to CarSalon, your premier destination for automotive excellence. With a rich history spanning over a decade, CarSalon has established itself as a trusted name in the automotive industry, delivering unparalleled service and quality craftsmanship to our valued customers.</p>
+    <p>At CarSalon, we believe in more than just fixing cars; we believe in exceeding expectations and building lasting relationships with our clients. Our team of highly skilled technicians is passionate about what they do, utilizing the latest tools, techniques, and technology to ensure that every vehicle that passes through our doors receives the attention and care it deserves.</p>
+    <p>From routine maintenance to complex repairs, CarSalon has the expertise and experience to handle it all. Our comprehensive range of services covers everything from oil changes and brake repairs to engine diagnostics and transmission overhauls. No matter the make or model of your vehicle, you can trust CarSalon to provide reliable, efficient, and affordable solutions.</p>
+    <p>But CarSalon is more than just a repair shop; we're a community of automotive enthusiasts dedicated to keeping our roads safe and our customers satisfied. We understand that your vehicle is more than just a mode of transportation; it's an investment, a lifeline, and a source of pride. That's why we go above and beyond to ensure that every car that leaves our shop is in top condition, ready to tackle the road ahead.</p>
+    <p>Experience the CarSalon difference today and discover why we're the preferred choice for all your automotive needs. Trust us with your vehicle, and let us show you what true excellence looks like.</p>
+    <div id="slideshow-about">
+        <!-- Slideshow images -->
+        <img src="WhatsApp Image 2024-03-21 at 22.22.54_a0c90b07.jpg" alt="Slide 1">
+        <img src="WhatsApp Image 2024-03-21 at 15.44.44_fe363c8d.jpg" alt="Slide 2">
+        <img src="WhatsApp Image 2024-03-21 at 15.44.44_fe363c8d.jpg" alt="Slide 3">
+        <img src="WhatsApp Image 2024-03-21 at 15.44.44_62d4636c.jpg" alt="Slide 4">
+    </div>
+</section>
+
+<script>
+    // Dynamic image slider code
+    let currentIndexAbout = 0;
+    const imagesAbout = document.querySelectorAll('#slideshow-about img');
+    const totalImagesAbout = imagesAbout.length;
+    
+    function showNextImageAbout() {
+        imagesAbout[currentIndexAbout].style.display = 'none';
+        currentIndexAbout = (currentIndexAbout + 1) % totalImagesAbout;
+        imagesAbout[currentIndexAbout].style.display = 'block';
+    }
+    
+    setInterval(showNextImageAbout, 3000); // Change image every 3 seconds
+</script>
+
+
+<section id="about">
+    <h2>About CarSalon</h2>
+    <p>CarSalon offers a wide range of automotive services to meet your needs. Our team of skilled technicians is dedicated to providing top-quality service and ensuring your vehicle is in optimal condition. Explore our comprehensive list of services below:</p>
+    
+    <h3>Services Provided:</h3>
+    
+    <ul>
+        <li>Routine Maintenance:
+            <ul>
+                <li>Oil changes</li>
+                <li>Filter replacements (air, oil, fuel)</li>
+                <li>Fluid checks and top-ups (coolant, brake fluid, transmission fluid)</li>
+                <li>Tire rotations</li>
+                <li>Wheel alignments</li>
+                <li>Battery checks and replacements</li>
+            </ul>
+        </li>
+        <li>Diagnostic Services:
+            <ul>
+                <li>Engine diagnostics</li>
+                <li>Transmission diagnostics</li>
+                <li>Brake system diagnostics</li>
+                <li>Suspension diagnostics</li>
+                <li>Electrical system diagnostics</li>
+                <li>Check engine light diagnosis</li>
+            </ul>
+        </li>
+        <li>Repair and Replacement:
+            <ul>
+                <li>Brake repairs (pad replacement, rotor resurfacing)</li>
+                <li>Engine tune-ups</li>
+                <li>Exhaust system repairs</li>
+                <li>Heating and air conditioning repairs</li>
+                <li>Steering and suspension repairs</li>
+                <li>Transmission repairs and rebuilds</li>
+            </ul>
+        </li>
+        <li>Detailing and Cleaning:
+            <ul>
+                <li>Interior cleaning and vacuuming</li>
+                <li>Exterior washing and drying</li>
+                <li>Waxing and polishing</li>
+                <li>Paint correction and scratch removal</li>
+                <li>Upholstery cleaning and conditioning</li>
+                <li>Headlight restoration</li>
+            </ul>
+        </li>
+        <li>Customization and Upgrades:
+            <ul>
+                <li>Installation of aftermarket accessories (grilles, spoilers, body kits)</li>
+                <li>Upgrade to performance brakes and suspension components</li>
+                <li>Installation of custom wheels and tires</li>
+                <li>Audio system upgrades (speakers, amplifiers, subwoofers)</li>
+                <li>Installation of lighting enhancements (LED headlights, underbody lighting)</li>
+                <li>Window tinting and protection film installation</li>
+            </ul>
+        </li>
+        <li>Performance Tuning:
+            <ul>
+                <li>Engine modifications (intake, exhaust, turbochargers)</li>
+                <li>Tuning for increased horsepower and torque</li>
+                <li>Suspension upgrades for improved handling and stability</li>
+                <li>ECU remapping for optimized engine performance</li>
+                <li>Dyno tuning and testing</li>
+                <li>Nitrous oxide systems installation</li>
+            </ul>
+        </li>
+        <li>Pre-Purchase Inspections:
+            <ul>
+                <li>Comprehensive vehicle inspections</li>
+                <li>Evaluation of mechanical and cosmetic condition</li>
+                <li>Test drive and performance assessment</li>
+                <li>Inspection of vehicle history and service records</li>
+                <li>Written report with findings and recommendations</li>
+                <li>Consultation with potential buyers on findings and next steps</li>
+            </ul>
+        </li>
+        <li>Emergency Roadside Assistance:
+            <ul>
+                <li>Jump starts for dead batteries</li>
+                <li>Tire changes for flat tires</li>
+                <li>Fuel delivery for empty tanks</li>
+                <li>Lockout assistance for keys locked in the vehicle</li>
+                <li>Towing services for vehicles unable to be driven</li>
+                <li>On-the-spot repairs for minor issues to get customers back on the road quickly</li>
+            </ul>
+        </li>
+        <li>Home Services:
+            <ul>
+                <li>Mobile oil changes</li>
+                <li>On-site detailing and cleaning</li>
+                <li>Vehicle inspection at your location</li>
+                <li>Emergency roadside assistance dispatched to your home</li>
+                <li>Customization and upgrade consultations at your convenience</li>
+                <li>Performance tuning and diagnostics conducted at your location</li>
+            </ul>
+        </li>
+    </ul>
+</section>
+
+<section id="before-after">
+    <h2>Before and After Showcase</h2>
+    <div class="vertical-layout">
+        <div class="vertical">
+            <div class="image">
+                <img src="WhatsApp Image 2024-03-21 at 23.39.04_240fbb29.jpg" alt="Before">
+                <div class="caption">Before</div>
+            </div>
+            <div class="image">
+                <img src="WhatsApp Image 2024-03-21 at 23.39.03_336e41e8.jpg" alt="After">
+                <div class="caption">After</div>
+            </div>
+        </div>
+    </div>
+    <div class="vertical-layout">
+        <div class="vertical">
+            <div class="image">
+                <img src="WhatsApp Image 2024-03-22 at 00.02.33_73615ca9.jpg" alt="Before">
+                <div class="caption">Before</div>
+            </div>
+            <div class="image">
+                <img src="C:\Users\Admin\Desktop\car repair\WhatsApp Image 2024-03-22 at 00.02.33_6faa187b.jpg" alt="After">
+                <div class="caption">After</div>
+            </div>
+        </div>
+    </div>
+    <div class="vertical-layout">
+        <div class="vertical">
+            <div class="image">
+                <img src="WhatsApp Image 2024-03-22 at 00.13.22_71226ec5.jpg" alt="Before">
+                <div class="caption">Before</div>
+            </div>
+            <div class="image">
+                <img src="WhatsApp Image 2024-03-22 at 00.13.20_b84ee223.jpg" alt="After">
+                <div class="caption">After</div>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+<section id="customer-reviews">
+    <h2>Customer Reviews</h2>
+    <!-- Review Submission Form -->
+    <form id="review-form" class="review-form">
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" required>
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email">
+        <label for="rating">Rating:</label>
+        <select id="rating" name="rating" required>
+            <option value="5">5 Stars</option>
+            <option value="4">4 Stars</option>
+            <option value="3">3 Stars</option>
+            <option value="2">2 Stars</option>
+            <option value="1">1 Star</option>
+        </select>
+        <label for="comment">Comment:</label>
+        <textarea id="comment" name="comment" required></textarea>
+        <button type="submit">Submit Review</button>
+    </form>
+    
+    <!-- Display Reviews -->
+    <div id="reviews" class="review-container">
+        <!-- Reviews will be dynamically added here -->
+    </div>
+</section>
+
+
+<!-- Contact Information -->
+<div class="contact-info">
+    <h3>Contact Us</h3>
+    <ul>
+        <li><i class="fas fa-map-marker-alt"></i> 123 Main Street, MADINA, ACCRA, GHANA</li>
+        <li><i class="fas fa-phone-alt"></i> +2330206878431</li>
+        <li><i class="fas fa-envelope"></i> info@carsalon.com</li>
+        <li><i class="far fa-clock"></i> Mon-Fri: 8am-6pm, Sat: 9am-3pm, Sun: Closed</li>
+    </ul>
+</div>
+
+<!-- Social Media Integration -->
+<div class="social-icons">
+    <h3>Follow Us</h3>
+    <ul>
+        <li><a href="#" class="social-icon"><i class="fab fa-facebook-f"></i></a></li>
+        <li><a href="#" class="social-icon"><i class="fab fa-twitter"></i></a></li>
+        <li><a href="#" class="social-icon"><i class="fab fa-instagram"></i></a></li>
+        <li><a href="#" class="social-icon"><i class="fab fa-linkedin-in"></i></a></li>
+    </ul>
+</div>
+
+<!-- Live Chat Support -->
+<div class="live-chat">
+    <h3>Live Chat Support</h3>
+    <p>Have a question? Chat with us live!</p>
+    <!-- Add live chat widget code here -->
+</div>
+
+<!-- Newsletter Signup Form -->
+<div class="newsletter-signup">
+    <h3>Subscribe to Our Newsletter</h3>
+    <p>Stay updated with our latest news and promotions.</p>
+    <form id="newsletter-form" action="#" method="post">
+        <input type="email" id="newsletter-email" name="newsletter-email" placeholder="Your email address" required>
+        <button type="submit">Subscribe</button>
+    </form>
+</div>

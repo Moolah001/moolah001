@@ -1,0 +1,222 @@
+/* CSS styles for CarSalon website */
+
+/* Adjusting the size of the heading */
+header h1 {
+    font-size: 1.5em; /* Medium size */
+}
+
+/* Slideshow styles */
+#slideshow {
+    width: 100%;
+    height: 300px; /* Adjust height as needed */
+    overflow: hidden;
+    position: relative;
+}
+
+#slideshow img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    position: absolute;
+    top: 0;
+    left: 0;
+    opacity: 0;
+    transition: opacity 1s ease;
+}
+
+#slideshow img.active {
+    opacity: 1;
+}
+/* Add hover effect to navigation links */
+nav ul li a:hover {
+    color: #007bff; /* Change text color on hover */
+    text-decoration: underline; /* Add underline on hover */
+}
+
+/* Style icons */
+nav ul li a i {
+    margin-right: 5px; /* Add space between icon and text */
+}
+/* Add hover effect to navigation links */
+nav ul li a:hover {
+    color: #007bff; /* Change text color on hover */
+    text-decoration: underline; /* Add underline on hover */
+}
+
+/* Style icons */
+nav ul li a i {
+    margin-right: 5px; /* Add space between icon and text */
+    color: black; /* Set icon color to black */
+}
+
+
+<head>
+    <style>
+        /* Paste the CSS code here */
+        .services {
+            background-color: #f9f9f9;
+            padding: 20px;
+            border-radius: 8px;
+        }
+
+        .services h3 {
+            margin-top: 0;
+        }
+
+        .services ul {
+            list-style-type: none;
+            padding-left: 0;
+        }
+
+        .services ul ul {
+            margin-top: 10px;
+        }
+
+        .services ul ul li {
+            margin-bottom: 5px;
+        }
+    </style>
+</head>
+
+
+
+
+#before-after {
+    padding: 20px;
+}
+
+.vertical-layout {
+    margin-bottom: 20px;
+}
+
+.vertical {
+    display: flex;
+    gap: 20px;
+}
+
+.image {
+    position: relative;
+}
+
+.image img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    border-radius: 8px;
+}
+
+.caption {
+    position: absolute;
+    bottom: 10px;
+    left: 10px;
+    background-color: rgba(0, 0, 0, 0.7);
+    color: white;
+    padding: 5px 10px;
+    border-radius: 4px;
+    font-size: 14px;
+}
+
+
+
+.review-form {
+    background-color: #f9f9f9;
+    padding: 20px;
+    border-radius: 8px;
+    margin-bottom: 20px;
+}
+
+.review-form label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+.review-form input[type="text"],
+.review-form input[type="email"],
+.review-form select,
+.review-form textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+.review-form button {
+    background-color: #007bff;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.review-form button:hover {
+    background-color: #0056b3;
+}
+
+.review-container {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.review {
+    background-color: #f9f9f9;
+    padding: 20px;
+    border-radius: 8px;
+    margin-right: 20px;
+    margin-bottom: 20px;
+    flex: 0 0 calc(50% - 20px); /* Two reviews per row */
+}
+
+.review h3 {
+    margin-top: 0;
+    margin-bottom: 10px;
+}
+
+.review p {
+    margin: 0;
+} 
+
+
+
+
+
+<!-- Contact Information -->
+<div class="contact-info">
+    <h3>Contact Us</h3>
+    <ul>
+        <li><i class="fas fa-map-marker-alt"></i> 123 Main Street, Cityville, State, Country</li>
+        <li><i class="fas fa-phone-alt"></i> +1 234 567 890</li>
+        <li><i class="fas fa-envelope"></i> info@carsalon.com</li>
+        <li><i class="far fa-clock"></i> Mon-Fri: 8am-6pm, Sat: 9am-3pm, Sun: Closed</li>
+    </ul>
+</div>
+
+<!-- Social Media Integration -->
+<div class="social-icons">
+    <h3>Follow Us</h3>
+    <ul>
+        <li><a href="#" class="social-icon"><i class="fab fa-facebook-f"></i></a></li>
+        <li><a href="#" class="social-icon"><i class="fab fa-twitter"></i></a></li>
+        <li><a href="#" class="social-icon"><i class="fab fa-instagram"></i></a></li>
+        <li><a href="#" class="social-icon"><i class="fab fa-linkedin-in"></i></a></li>
+    </ul>
+</div>
+
+<!-- Live Chat Support -->
+<div class="live-chat">
+    <h3>Live Chat Support</h3>
+    <p>Have a question? Chat with us live!</p>
+    <!-- Add live chat widget code here -->
+</div>
+
+<!-- Newsletter Signup Form -->
+<div class="newsletter-signup">
+    <h3>Subscribe to Our Newsletter</h3>
+    <p>Stay updated with our latest news and promotions.</p>
+    <form id="newsletter-form" action="#" method="post">
+        <input type="email" id="newsletter-email" name="newsletter-email" placeholder="Your email address" required>
+        <button type="submit">Subscribe</button>
+    </form>
+</div>
